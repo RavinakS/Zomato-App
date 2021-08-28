@@ -3,26 +3,20 @@
         "restaurant": "The Only Place",
         "foodItems": [
             {
-                "foodName": "Masala Dosa",
+                "Dosa": ["Masala Dosa", "Plain", "Onion", "Rava", "Cheese"],
                 "foodType": "Veg"
             },
             {
-                "foodName": "Sofritas Burrito",
-                "foodType": "Burrito",
-                "protein": "sofritas",
-                "calories": 945
+                "Idli": ["Rice and Mong dal idli", "Paneer Vegetable idli", "Mini Spinach idli", "Kanchipuram idli", "Bread Idli"],
+                "foodType": "Veg"
             },
             {
-                "foodName": "Chicken Burrito Bowl",
-                "foodType": "Burrito Bowl",
-                "calories": 630
+                "Sandwich": ["Normal chicken Sandwich", "Egg Sandwich", "Fish Sandwich", "Grilled cheese Sandwich", "Tuna Sandwich"],
+                "foodType": "NonVeg"
             },
             {
-                "foodName": "Pumpkin Muffin",
-                "calories": 580,
-                "foodType": "Pastry",
-                "sideItem": true,
-                "carbs": 90
+                "chicken": ["Chicken lolipop", "Chicken keema", "Chicken Biryani", "Chicken shawarma", "chicken manchurian"],
+                "foodType": "nonVeg"
             }
         ]
     },
@@ -30,57 +24,42 @@
         "restaurant": "Burger King",
         "foodItems": [
             {
-                "foodName": "Biscuit",
-                "calories": 390,
-                "breakfastItem": true,
-                "correctedTerm": "Sausage Biscuit"
+                "Cake": ["Butter cake", "Sponge cake", "Chiffon Cake", "Red Velvet cake", "Carrot cake", "Opera cake"],
+                "foodType": "Dessert"
             },
             {
-                "foodName": "Ham Egg and Cheese Biscuit",
-                "calories": 370,
-                "breakfastItem": true,
-                "foodType": "Breakfast"
+                "tea": ["Green tea", "White tea", "Black tea", "Herbal tea", "tea blends", "Butter tea", "milk with Ginger tea"],
+                "foodType": "Tea"
             },
             {
-                "foodName": "Hash Browns",
-                "calories": 250,
-                "breakfastItem": true,
-                "sideItem": true,
-                "correctedTerm": "Small Hash Browns"
+                "Sandwich": ["Normal chicken Sandwich", "Egg Sandwich", "Fish Sandwich", "Grilled cheese Sandwich", "Tuna Sandwich"],
+                "foodType": "NonVeg"
+            },
+            {
+                "chicken": ["Chicken lolipop", "Chicken keema", "Chicken Biryani", "Chicken shawarma", "chicken manchurian"],
+                "foodType": "nonVeg"
             }
+            
         ]
     },
     {
         "restaurant": "Treat Restaurant",
         "foodItems": [
             {
-                "foodName": "Black Forest Ham",
-                "calories": 290,
-                "correctedTerm": "6 inch Black Forest Ham"
+                "tea": ["Green tea", "White tea", "Black tea", "Herbal tea", "tea blends", "Butter tea", "milk with Ginger tea"],
+                "foodType": "Tea"
             },
             {
-                "foodName": "Footlong Rotisserie Chicken",
-                "foodType": "Footlong",
-                "calories": 700
+                "Sandwich": ["Normal chicken Sandwich", "Egg Sandwich", "Fish Sandwich", "Grilled cheese Sandwich", "Tuna Sandwich"],
+                "foodType": "NonVeg"
             },
             {
-                "foodName": "Rotisserie Chicken Sandwich",
-                "calories": 350
+                "Dosa": ["Masala Dosa", "Plain", "Onion", "Rava", "Cheese"],
+                "foodType": "Veg"
             },
             {
-                "foodName": "Subway Club",
-                "calories": 310,
-                "correctedTerm": "6 inch Subway Club"
-            },
-            {
-                "foodName": "Chocolate Chunk Cookie",
-                "calories": 210,
-                "sideItem": true
-            },
-            {
-                "foodName": "Double Chocolate Cookie",
-                "calories": 210,
-                "sideItem": true
+                "Idli": ["Rice and Mong dal idli", "Paneer Vegetable idli", "Mini Spinach idli", "Kanchipuram idli", "Bread Idli"],
+                "foodType": "Veg"
             }
         ]
     },
@@ -88,31 +67,24 @@
         "restaurant": "Nagarjuna",
         "foodItems": [
             {
-                "foodName": "Chicken Sandwich",
-                "foodType": "Chicken",
-                "calories": 440
+                "tea": ["Green tea", "White tea", "Black tea", "Herbal tea", "tea blends", "Butter tea", "milk with Ginger tea"],
+                "foodType": "Tea"
             },
             {
-                "foodName": "Grilled Chicken Club Sandwich",
-                "calories": 440
+                "Sandwich": ["Normal chicken Sandwich", "Egg Sandwich", "Fish Sandwich", "Grilled cheese Sandwich", "Tuna Sandwich"],
+                "foodType": "NonVeg"
             },
             {
-                "foodName": "Grilled Chicken Club",
-                "calories": 440
+                "Dosa": ["Masala Dosa", "Plain", "Onion", "Rava", "Cheese"],
+                "foodType": "Veg"
             },
             {
-                "foodName": "12 piece chicken nuggets",
-                "foodType": "Nuggets",
-                "calories": 400
+                "Idli": ["Rice and Mong dal idli", "Paneer Vegetable idli", "Mini Spinach idli", "Kanchipuram idli", "Bread Idli"],
+                "foodType": "Veg"
             },
             {
-                "foodName": "Grilled Chicken Cool Wrap",
-                "calories": 340
-            },
-            {
-                "foodName": "Chicken Wrap",
-                "calories": 340,
-                "correctedTerm": "Grilled Chicken Cool Wrap"
+                "Ladoo": ["Beshan ladoo", "bundi ladoo", "mix dry fruits ladoo", "Naryal ladoo", "Rava ladoo"],
+                "foodType": "Sweeets"
             }
         ]
     },
@@ -120,55 +92,24 @@
         "restaurant": "McDonalds",
         "foodItems": [
             {
-                "foodName": "Big Mac",
-                "foodType": "Burger",
-                "calories": 540
+                "Dosa": ["Masala Dosa", "Plain", "Onion", "Rava", "Cheese"],
+                "foodType": "Veg"
             },
             {
-                "foodName": "Big Macs",
-                "calories": 540,
-                "correctedTerm": "Big Mac"
+                "Idli": ["Rice and Mong dal idli", "Paneer Vegetable idli", "Mini Spinach idli", "Kanchipuram idli", "Bread Idli"],
+                "foodType": "Veg"
             },
             {
-                "foodName": "Four Piece Buttermilk Crispy Tenders",
-                "calories": 490,
-                "correctedTerm": "4 Piece Buttermilk Crispy Tenders"
+                "Ladoo": ["Beshan ladoo", "bundi ladoo", "mix dry fruits ladoo", "Naryal ladoo", "Rava ladoo"],
+                "foodType": "NonVeg"
             },
             {
-                "foodName": "4 Piece Buttermilk Crispy Chicken Tenders",
-                "calories": 490,
-                "correctedTerm": "4 Piece Buttermilk Crispy Tenders"
+                "Momos": ["Chicken momos", "fried veg momos", "tandoori momos", "", "Steamed momos"],
+                "foodType": "Momos"
             },
             {
-                "foodName": "Four Piece Buttermilk Crispy Chicken Tenders",
-                "calories": 490,
-                "correctedTerm": "4 Piece Buttermilk Crispy Tenders"
-            }
-        ]
-    },
-    {
-        "restaurant": "Arbys",
-        "foodItems": [
-            {
-                "foodName": "Classic Roast Beef",
-                "calories": 360,
-                "foodType": "Roast Beef"
-            },
-            {
-                "foodName": "Breakfast Platter with Sausage",
-                "calories": 1070,
-                "foodType": "Breakfast"
-            },
-            {
-                "foodName": "Hash Browns",
-                "calories": 370,
-                "sideItem": true,
-                "correctedTerm": "Hash Rounds"
-            },
-            {
-                "foodName": "Large Hash Rounds",
-                "calories": 510,
-                "sideItem": true
+                "Cake": ["Butter cake", "Sponge cake", "Chiffon Cake", "Red Velvet cake", "Carrot cake", "Opera cake"],
+                "foodType": "Dessert"
             }
         ]
     },
@@ -176,43 +117,20 @@
         "restaurant": "Five Guys",
         "foodItems": [
             {
-                "foodName": "Hamburger",
-                "foodType": "Burger",
-                "calories": 700
+                "Idli": ["Rice and Mong dal idli", "Paneer Vegetable idli", "Mini Spinach idli", "Kanchipuram idli", "Bread Idli"],
+                "foodType": "Veg"
             },
             {
-                "foodName": "Regular French Fries",
-                "calories": 953,
-                "sideItem": true,
-                "ketchupItem": true
+                "Ladoo": ["Beshan ladoo", "bundi ladoo", "mix dry fruits ladoo", "Naryal ladoo", "Rava ladoo"],
+                "foodType": "Sweets"
             },
             {
-                "foodName": "Large French Fries",
-                "calories": 1314,
-                "sideItem": true,
-                "ketchupItem": true
+                "Momos": ["Chicken momos", "fried veg momos", "tandoori momos", "", "Steamed momos"],
+                "foodType": "Momos"
             },
             {
-                "foodName": "Large Fries",
-                "calories": 1314,
-                "sideItem": true,
-                "ketchupItem": true
-            }
-        ]
-    },
-    {
-        "restaurant": "In-N-Out",
-        "foodItems": [
-            {
-                "foodName": "Hamburger",
-                "foodType": "Burger",
-                "calories": 390
-            },
-            {
-                "foodName": "Strawberry Shake",
-                "foodType": "Shake",
-                "calories": 590,
-                "sideItem": true
+                "tea": ["Green tea", "White tea", "Black tea", "Herbal tea", "tea blends", "Butter tea", "milk with Ginger tea"],
+                "foodType": "Tea"
             }
         ]
     },
@@ -220,27 +138,20 @@
         "restaurant": "Sonic",
         "foodItems": [
             {
-                "foodName": "Veggie Burger with Mayo",
-                "calories": 520
+                "Fish": ["Spicy fish curry", "Haidravadi fish curry", "Fish Biryani", "Fish fry"],
+                "foodType": "Fish"
             },
             {
-                "foodName": "Veggie Burger with Mustard",
-                "calories": 470
+                "Idli": ["Rice and Mong dal idli", "Paneer Vegetable idli", "Mini Spinach idli", "Kanchipuram idli", "Bread Idli"],
+                "foodType": "Veg"
             },
             {
-                "foodName": "Veggie Burger",
-                "calories": 470
+                "Ladoo": ["Beshan ladoo", "bundi ladoo", "mix dry fruits ladoo", "Naryal ladoo", "Rava ladoo"],
+                "foodType": "Sweets"
             },
             {
-                "foodName": "Country Fried Steak Sandwich",
-                "foodType": "Sandwich",
-                "calories": 650
-            },
-            {
-                "foodName": "Tots with Cheese",
-                "calories": 170,
-                "sideItem": true,
-                "ketchupItem": true
+                "Cake": ["Butter cake", "Sponge cake", "Chiffon Cake", "Red Velvet cake", "Carrot cake", "Opera cake"],
+                "foodType": "Dessert"
             }
         ]
     },
@@ -248,11 +159,24 @@
         "restaurant": "Panda Express",
         "foodItems": [
             {
-                "foodName": "Orange Chicken",
-                "foodType": "Entree",
-                "calories": 380,
-                "carbs": 44,
-                "sodium": 610
+                "Fish": ["Spicy fish curry", "Haidravadi fish curry", "Fish Biryani", "Fish fry"],
+                "foodType": "Fish"
+            },
+            {
+                "Idli": ["Rice and Mong dal idli", "Paneer Vegetable idli", "Mini Spinach idli", "Kanchipuram idli", "Bread Idli"],
+                "foodType": "Veg"
+            },
+            {
+                "Ladoo": ["Beshan ladoo", "bundi ladoo", "mix dry fruits ladoo", "Naryal ladoo", "Rava ladoo"],
+                "foodType": "Sweets"
+            },
+            {
+                "Momos": ["Chicken momos", "fried veg momos", "tandoori momos", "", "Steamed momos"],
+                "foodType": "Momos"
+            },
+            {
+                "tea": ["Green tea", "White tea", "Black tea", "Herbal tea", "tea blends", "Butter tea", "milk with Ginger tea"],
+                "foodType": "Tea"
             }
         ]
     },
@@ -260,24 +184,24 @@
         "restaurant": "Cookout",
         "foodItems": [
             {
-                "foodName": "Small Hamburger",
-                "foodType": "Burger",
-                "calories": 226
+                "Burger": ["Small Hamburger", "Regular Hamburger", "Hamburger", "Huge Hamburger"],
+                "foodType": "Burger"
             },
             {
-                "foodName": "Regular Hamburger",
-                "foodType": "Burger",
-                "calories": 325
+                "Fish": ["Spicy fish curry", "Haidravadi fish curry", "Fish Biryani", "Fish fry"],
+                "foodType": "Fish"
             },
             {
-                "foodName": "Hamburger",
-                "calories": 325,
-                "correctedTerm": "Regular Hamburger"
+                "Idli": ["Rice and Mong dal idli", "Paneer Vegetable idli", "Mini Spinach idli", "Kanchipuram idli", "Bread Idli"],
+                "foodType": "Veg"
             },
             {
-                "foodName": "Huge Hamburger",
-                "foodType": "Burger",
-                "calories": 510
+                "Ladoo": ["Beshan ladoo", "bundi ladoo", "mix dry fruits ladoo", "Naryal ladoo", "Rava ladoo"],
+                "foodType": "Sweets"
+            },
+            {
+                "Cake": ["Butter cake", "Sponge cake", "Chiffon Cake", "Red Velvet cake", "Carrot cake", "Opera cake"],
+                "foodType": "Dessert"
             }
        ]
     }
