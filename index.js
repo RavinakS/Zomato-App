@@ -4,13 +4,27 @@ const fs = require('fs');
 function login(){
     const username = readline.question("userName/Phone Number:- ");
     const password = readline.question("password:- ");
-    return "Loged in Successfully";
+
+    const filename = 'usersDetails.json'
+    const all_users_data = readJsonFile(filename);
+    all_users_data.users.forEach(element=>{
+        if(element.userName === username){
+            if(element.password === password){
+                return "Loged in Successfully";
+            }else{
+                return "Wrong Password!"
+            }
+        }else{
+            return "UserName not exist. try signing Up(s)."
+        }
+    })
 }
 
 function signUp(){
     const userName = readline.question("userName/Phone Number:- ");
     const password = readline.question("Password:- ");
     const password2 = readline.question("Re-enter the password:- ");
+
     if(password===password2){
         const location = readline.question("Where will you like to place your order?- ");
         const userDetails = {
@@ -18,9 +32,11 @@ function signUp(){
             "password": password2,
             "address": location
         }
-        const filename = 'usersDetails.json'
+
+        const filename = 'usersDetails.json';
         const all_users_data = readJsonFile(filename);
         all_users_data.users.push(userDetails);
+
         writeJsonFile(filename, all_users_data);
     }
 }
