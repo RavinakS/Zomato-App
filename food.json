@@ -1,12 +1,10 @@
 [
     {
-        "restaurant": "Chipotle",
+        "restaurant": "The Only Place",
         "foodItems": [
             {
-                "foodName": "Chorizo Burrito",
-                "foodType": "Burrito",
-                "protein": "chorizo",
-                "calories": 1095
+                "foodName": "Masala Dosa",
+                "foodType": "Veg"
             },
             {
                 "foodName": "Sofritas Burrito",
@@ -22,20 +20,6 @@
             {
                 "foodName": "Pumpkin Muffin",
                 "calories": 580,
-                "foodType": "Pastry",
-                "sideItem": true,
-                "carbs": 90
-            },
-            {
-                "foodName": "Chocolate Chip Muffie",
-                "calories": 320,
-                "foodType": "Pastry",
-                "sideItem": true,
-                "carbs": 46
-            },
-            {
-                "foodName": "Pumpkin Muffie",
-                "calories": 290,
                 "foodType": "Pastry",
                 "sideItem": true,
                 "carbs": 90
@@ -58,27 +42,6 @@
                 "foodType": "Breakfast"
             },
             {
-                "foodName": "Sausage Egg and Cheese Biscuit",
-                "calories": 510,
-                "breakfastItem": true
-            },
-            {
-                "foodName": "Bacon Egg and Cheese Biscuit",
-                "calories": 380,
-                "breakfastItem": true
-            },
-            {
-                "foodName": "Fully Loaded Biscuit",
-                "calories": 610,
-                "breakfastItem": true
-            },
-            {
-                "foodName": "Cinnamon Roll",
-                "calories": 280,
-                "breakfastItem": true,
-                "sideItem": true
-            },
-            {
                 "foodName": "Hash Browns",
                 "calories": 250,
                 "breakfastItem": true,
@@ -88,7 +51,7 @@
         ]
     },
     {
-        "restaurant": "Subway",
+        "restaurant": "Treat Restaurant",
         "foodItems": [
             {
                 "foodName": "Black Forest Ham",
@@ -122,7 +85,7 @@
         ]
     },
     {
-        "restaurant": "Chick-fil-A",
+        "restaurant": "Nagarjuna",
         "foodItems": [
             {
                 "foodName": "Chicken Sandwich",
@@ -180,17 +143,6 @@
                 "foodName": "Four Piece Buttermilk Crispy Chicken Tenders",
                 "calories": 490,
                 "correctedTerm": "4 Piece Buttermilk Crispy Tenders"
-            },
-            {
-                "foodName": "Caramel Apple Empanada",
-                "calories": 280,
-                "foodType": "Dessert",
-                "sideItem": true
-            },
-            {
-                "foodName": "Seasoned Rice",
-                "calories": 120,
-                "sideItem": true
             }
         ]
     },
