@@ -26,7 +26,7 @@ function signUp(){
     const password2 = readline.question("Re-enter the password:- ");
 
     if(password===password2){
-        const location = readline.question("Where will you like to place your order?- ");
+        const location = address();
         const userDetails = {
             "userName": userName,
             "password": password2,
@@ -38,6 +38,9 @@ function signUp(){
         all_users_data.users.push(userDetails);
 
         writeJsonFile(filename, all_users_data);
+        return "Account has been created."
+    }else{
+        return "Both passwords should match."
     }
 }
 
@@ -54,7 +57,7 @@ function writeJsonFile(fileName, data){
 }
 
 function address(){
-    const address = readline.question("Your current location:- ");
+    const address = readline.question("Where will you like to place your order?- ");
     return address;
 }
 
@@ -115,6 +118,12 @@ function addToCart(){
 }
 
 function food(){
+    
+    console.log("");
+    console.log(`           ****            `);
+    console.log("   Eat what makes you happy :)");
+    console.log("");
+
     const filename = 'food.json';
     const food_data = readJsonFile(filename)
     const awailableFood = foodType(food_data);
@@ -128,12 +137,15 @@ function food(){
     return awailableFood;
 }
 
-console.log(login());
-console.log(address());
-console.log("");
-console.log(`           ****            `);
-console.log("   Eat what makes you happy :)");
-console.log("");
+const loginSingUp = readline.question("Login(L/l) or Signup(S/s) => ");
+if(loginSingUp === 'l' || loginSingUp === "L"){
+    console.log(login());
+    address()
+    food();
+}else if(loginSingUp === 's' || loginSingUp === 'S'){
+    console.log(signUp());
+    food();
+}else{
+    console.log("Please enter l/L for Loging in and s/S for creating account.");
+}
 
-
-food();
