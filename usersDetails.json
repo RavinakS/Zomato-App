@@ -9,6 +9,11 @@
       "userName": "ravina",
       "password": "2",
       "address": "electronic city"
+    },
+    {
+      "userName": "1234567890",
+      "password": "sd",
+      "address": "Huskur"
     }
   ]
 }

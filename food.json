@@ -1,6 +1,7 @@
 [
     {
         "restaurant": "The Only Place",
+        "id": 1,
         "foodItems": [
             {
                 "Dosa": ["Masala Dosa", "Plain", "Onion", "Rava", "Cheese"],
@@ -22,6 +23,7 @@
     },
     {
         "restaurant": "Burger King",
+        "id": 2,
         "foodItems": [
             {
                 "Cake": ["Butter cake", "Sponge cake", "Chiffon Cake", "Red Velvet cake", "Carrot cake", "Opera cake"],
@@ -44,6 +46,7 @@
     },
     {
         "restaurant": "Treat Restaurant",
+        "id": 3,
         "foodItems": [
             {
                 "Tea": ["Green tea", "White tea", "Black tea", "Herbal tea", "tea blends", "Butter tea", "milk with Ginger tea"],
@@ -65,6 +68,7 @@
     },
     {
         "restaurant": "Nagarjuna",
+        "id": 4,
         "foodItems": [
             {
                 "Tea": ["Green tea", "White tea", "Black tea", "Herbal tea", "tea blends", "Butter tea", "milk with Ginger tea"],
@@ -83,13 +87,14 @@
                 "foodType": "Idli"
             },
             {
-                "Ladoo": ["Beshan ladoo", "bundi ladoo", "mix dry fruits ladoo", "Naryal ladoo", "Rava ladoo"],
+                "Ladoo": ["Beshan ladoo (1/2 kg)", "bundi ladoo (1/2 kg)", "mix dry fruits ladoo (1/2 kg)", "Naryal ladoo (1/2 kg)", "Rava ladoo (1/2 kg)"],
                 "foodType": "Ladoo"
             }
         ]
     },
     {
         "restaurant": "McDonalds",
+        "id": 5,
         "foodItems": [
             {
                 "Dosa": ["Masala Dosa", "Plain", "Onion", "Rava", "Cheese"],
@@ -100,7 +105,7 @@
                 "foodType": "Idli"
             },
             {
-                "Ladoo": ["Beshan ladoo", "bundi ladoo", "mix dry fruits ladoo", "Naryal ladoo", "Rava ladoo"],
+                "Ladoo": ["Beshan ladoo (1/2 kg)", "bundi ladoo (1/2 kg)", "mix dry fruits ladoo (1/2 kg)", "Naryal ladoo (1/2 kg)", "Rava ladoo (1/2 kg)"],
                 "foodType": "Ladoo"
             },
             {
@@ -115,13 +120,14 @@
     },
     {
         "restaurant": "Five Guys",
+        "id": 6,
         "foodItems": [
             {
                 "Idli": ["Rice and Mong dal idli", "Paneer Vegetable idli", "Mini Spinach idli", "Kanchipuram idli", "Bread Idli"],
                 "foodType": "Idli"
             },
             {
-                "Ladoo": ["Beshan ladoo", "bundi ladoo", "mix dry fruits ladoo", "Naryal ladoo", "Rava ladoo"],
+                "Ladoo": ["Beshan ladoo (1/2 kg)", "bundi ladoo (1/2 kg)", "mix dry fruits ladoo (1/2 kg)", "Naryal ladoo (1/2 kg)", "Rava ladoo (1/2 kg)"],
                 "foodType": "Ladoo"
             },
             {
@@ -136,6 +142,7 @@
     },
     {
         "restaurant": "Sonic",
+        "id": 7,
         "foodItems": [
             {
                 "Fish": ["Spicy fish curry", "Haidravadi fish curry", "Fish Biryani", "Fish fry"],
@@ -146,7 +153,7 @@
                 "foodType": "Idli"
             },
             {
-                "Ladoo": ["Beshan ladoo", "bundi ladoo", "mix dry fruits ladoo", "Naryal ladoo", "Rava ladoo"],
+                "Ladoo": ["Beshan ladoo (1/2 kg)", "bundi ladoo (1/2 kg)", "mix dry fruits ladoo (1/2 kg)", "Naryal ladoo (1/2 kg)", "Rava ladoo (1/2 kg)"],
                 "foodType": "Ladoo"
             },
             {
@@ -157,6 +164,7 @@
     },
     {
         "restaurant": "Panda Express",
+        "id": 8,
         "foodItems": [
             {
                 "Fish": ["Spicy fish curry", "Haidravadi fish curry", "Fish Biryani", "Fish fry"],
@@ -167,7 +175,7 @@
                 "foodType": "Idli"
             },
             {
-                "Ladoo": ["Beshan ladoo", "bundi ladoo", "mix dry fruits ladoo", "Naryal ladoo", "Rava ladoo"],
+                "Ladoo": ["Beshan ladoo (1/2 kg)", "bundi ladoo (1/2 kg)", "mix dry fruits ladoo (1/2 kg)", "Naryal ladoo (1/2 kg)", "Rava ladoo (1/2 kg)"],
                 "foodType": "Ladoo"
             },
             {
@@ -182,6 +190,7 @@
     },
     {
         "restaurant": "Cookout",
+        "id": 9,
         "foodItems": [
             {
                 "Burger": ["Small Hamburger", "Regular Hamburger", "Hamburger", "Huge Hamburger"],
@@ -196,7 +205,7 @@
                 "foodType": "Idli"
             },
             {
-                "Ladoo": ["Beshan ladoo", "bundi ladoo", "mix dry fruits ladoo", "Naryal ladoo", "Rava ladoo"],
+                "Ladoo": ["Beshan ladoo (1/2 kg)", "bundi ladoo (1/2 kg)", "mix dry fruits ladoo (1/2 kg)", "Naryal ladoo (1/2 kg)", "Rava ladoo (1/2 kg)"],
                 "foodType": "Ladoo"
             },
             {

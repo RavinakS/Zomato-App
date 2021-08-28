@@ -7,17 +7,19 @@ function login(){
 
     const filename = 'usersDetails.json'
     const all_users_data = readJsonFile(filename);
-    all_users_data.users.forEach(element=>{
-        if(element.userName === username){
-            if(element.password === password){
-                return "Done";
+    var index = 0;
+    for(index; index<=all_users_data.users.length; index++){
+        if(all_users_data.users[index].userName === username){
+            if(all_users_data.users[index].password === password){
+                return "yes";
             }else{
-                return "Wrong Password!"
+                return 'No'
             }
-        }else{
-            return "UserName not exist. try signing Up(s)."
         }
-    })
+    }
+    if(index===all_users_data.users.length){
+        return 'no'
+    }
 }
 
 function signUp(){
@@ -116,7 +118,7 @@ function findingRestaurant(data, order){
             if(element2.foodType === order){
                 count +=1;
                 console.log("");
-                console.log(`Restaurant ${count}:- `, element.restaurant);
+                console.log(`Restaurant ${element.id} :- ${element.restaurant}`);
                 var index = 0;
                 for(index; index<element2[order].length; index++){
                     console.log(`${index+1} ${element2[order][index]}`);
@@ -133,7 +135,57 @@ function findingRestaurant(data, order){
     }
 }
 
-function addToCart(){
+function addToCart(foodDetails, item){
+    console.log("");
+    const r_id = parseInt(readline.question("Which Restaurant you want to go with? "));
+
+    function get_random (list) {
+        return list[Math.floor((Math.random()*list.length))];
+      }
+      
+    const prices = [250, 200, 100, 150, 130, 120, 220, 270, 240, 180, 260]
+    var item_Price = get_random(prices);
+
+    var all_item_price = [];
+    var total_Amount = 0
+
+    foodDetails.forEach(element=>{
+        if(element.id === r_id){
+            element.foodItems.forEach(product=>{
+                if(product.foodType === item){
+                    var index = 0;
+                    console.log("");
+                    console.log(" id    Item = Price");
+                    console.log("");
+                    for(index; index<product[item].length; index++){
+                        item_Price = get_random(prices)
+                        console.log(`${index+1} ${product[item][index]} = ${item_Price}`);
+                        all_item_price.push(item_Price);
+                    }
+                    try{
+                        console.log("");
+                        const item_id = parseInt(readline.question(`which ${item} you'll pick? (please enter the id of the ${item}) :- `));
+                        console.log("");
+                        total_Amount = total_Amount + all_item_price[item_id-1];
+                        console.log(total_Amount);
+                        console.log("");
+                    }catch{
+                        try{
+                            const item_id = parseInt(readline.question(`please enter the id of the ${item}) :- `));
+                            total_Amount = total_Amount + all_item_price[item_id-1];
+                            console.log(total_Amount);
+                            console.log("");
+                        }catch{
+                            console.log("");
+                            console.log("Invalid input!!!");
+                            console.log("");
+                        }
+                    }
+
+                }
+            })
+        }
+    })
 
 }
 
@@ -153,6 +205,7 @@ function food(){
     const user = readline.question("what would you like to eat? ");
 
     findingRestaurant(food_data, user);
+    addToCart(food_data, user);
 
     return awailableFood;
 }
@@ -160,10 +213,20 @@ function food(){
 console.log("");
 const loginSingUp = readline.question("Login(L/l) or Signup(S/s) => ");
 if(loginSingUp === 'l' || loginSingUp === "L"){
-    if(login() === 'Done'){
+    const zomatoUser = login();
+    if(zomatoUser === 'yes'){
+        console.log("");
         console.log("Loged in Successfully!");
+        console.log("");
         address()
         food();
+    }else if(zomatoUser === "No"){
+        console.log("");
+        console.log("Wrong Password!");
+        console.log("");
+    }else if(zomatoUser === "no"){
+        console.log("UserName not exist. try signing Up(s).");
+        console.log("");
     }else{
         console.log("");
         console.log("   ***");
