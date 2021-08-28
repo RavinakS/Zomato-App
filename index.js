@@ -7,6 +7,36 @@ function login(){
     return "Loged in Successfully";
 }
 
+function signUp(){
+    const userName = readline.question("userName/Phone Number:- ");
+    const password = readline.question("Password:- ");
+    const password2 = readline.question("Re-enter the password:- ");
+    if(password===password2){
+        const location = readline.question("Where will you like to place your order?- ");
+        const userDetails = {
+            "userName": userName,
+            "password": password2,
+            "address": location
+        }
+        const filename = 'usersDetails.json'
+        const all_users_data = readJsonFile(filename);
+        all_users_data.users.push(userDetails);
+        writeJsonFile(filename, all_users_data);
+    }
+}
+
+function readJsonFile(fileName){
+    const data = fs.readFileSync(fileName);
+    const food_data = JSON.parse(data);
+    return food_data;
+}
+
+function writeJsonFile(fileName, data){
+    const strData = JSON.stringify(data, null, 2);
+    fs.writeFileSync(fileName, strData);
+    return 'Done';
+}
+
 function address(){
     const address = readline.question("Your current location:- ");
     return address;
@@ -56,17 +86,22 @@ function findingRestaurant(data, order){
         })
     })
     if(count === 0){
+        console.log("");
+        console.log("oops!!");
         console.log("Currently not available:(");
+        console.log("Thanks for visiting:)");
+        console.log("");
     }
 }
 
-function addToCart()
+function addToCart(){
+
+}
 
 function food(){
-    const data = fs.readFileSync('food.json');
-    const food = JSON.parse(data);
-
-    const awailableFood = foodType(food);
+    const filename = 'food.json';
+    const food_data = readJsonFile(filename)
+    const awailableFood = foodType(food_data);
 
     console.log("");
     console.log(" **Welcome to Zomato**");
@@ -77,8 +112,8 @@ function food(){
     return awailableFood;
 }
 
-// console.log(login());
-// console.log(address());
+console.log(login());
+console.log(address());
 console.log("");
 console.log(`           ****            `);
 console.log("   Eat what makes you happy :)");
