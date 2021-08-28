@@ -10,7 +10,7 @@ function login(){
     all_users_data.users.forEach(element=>{
         if(element.userName === username){
             if(element.password === password){
-                return "Loged in Successfully";
+                return "Done";
             }else{
                 return "Wrong Password!"
             }
@@ -21,9 +21,13 @@ function login(){
 }
 
 function signUp(){
+    console.log("");
     const userName = readline.question("userName/Phone Number:- ");
+    console.log("");
     const password = readline.question("Password:- ");
+    console.log("");
     const password2 = readline.question("Re-enter the password:- ");
+    console.log("");
 
     if(password===password2){
         const location = address();
@@ -38,9 +42,13 @@ function signUp(){
         all_users_data.users.push(userDetails);
 
         writeJsonFile(filename, all_users_data);
+        
         return "Account has been created."
+        
     }else{
-        return "Both passwords should match."
+
+        return "Both passwords should match.";
+        
     }
 }
 
@@ -57,7 +65,7 @@ function writeJsonFile(fileName, data){
 }
 
 function address(){
-    const address = readline.question("Where will you like to place your order?- ");
+    const address = readline.question("(Address) Where will you like to place your order?- ");
     return address;
 }
 
@@ -118,7 +126,7 @@ function addToCart(){
 }
 
 function food(){
-    
+
     console.log("");
     console.log(`           ****            `);
     console.log("   Eat what makes you happy :)");
@@ -132,16 +140,30 @@ function food(){
     console.log(" **Welcome to Zomato**");
     const user = readline.question("what would you like to eat? ");
 
-    findingRestaurant(food, user);
+    findingRestaurant(food_data, user);
 
     return awailableFood;
 }
 
+console.log("");
 const loginSingUp = readline.question("Login(L/l) or Signup(S/s) => ");
 if(loginSingUp === 'l' || loginSingUp === "L"){
-    console.log(login());
-    address()
-    food();
+    if(login() === 'Done'){
+        console.log("Loged in Successfully!");
+        address()
+        food();
+    }else{
+        console.log("");
+        console.log("   ***");
+        console.log("Apologize for the inconvenience");
+        console.log("We are working on it to make things smooth for you.");
+        console.log("");
+        console.log("Your feedback will make us perfact.");
+        readline.question("Please describe your problem in short:- ")
+        console.log("");
+        console.log("Have a Good Day.");
+        console.log("");
+    }
 }else if(loginSingUp === 's' || loginSingUp === 'S'){
     console.log(signUp());
     food();

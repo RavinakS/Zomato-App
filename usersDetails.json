@@ -1,3 +1,19 @@
 {
-    "users":[]
+  "users": [
+    {
+      "userName": "6204141705",
+      "password": "1",
+      "address": "navgurukul"
+    },
+    {
+      "userName": "6204141705",
+      "password": "2",
+      "address": "ng"
+    },
+    {
+      "userName": "ravina",
+      "password": "2",
+      "address": "electronic city"
+    }
+  ]
 }
