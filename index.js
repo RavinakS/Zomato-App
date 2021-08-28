@@ -21,8 +21,17 @@ function login(){
 }
 
 function signUp(){
+    const filename = 'usersDetails.json';
     console.log("");
     const userName = readline.question("userName/Phone Number:- ");
+
+    const all_users_data = readJsonFile(filename);
+    all_users_data.users.forEach(element=>{
+        if(element.userName === userName){
+            console.log("hii");
+            return "exist";
+        }
+    })
     console.log("");
     const password = readline.question("Password:- ");
     console.log("");
@@ -37,18 +46,13 @@ function signUp(){
             "address": location
         }
 
-        const filename = 'usersDetails.json';
-        const all_users_data = readJsonFile(filename);
         all_users_data.users.push(userDetails);
 
         writeJsonFile(filename, all_users_data);
         
-        return "Account has been created."
-        
+        return "Account has been created."   
     }else{
-
-        return "Both passwords should match.";
-        
+        return "Both passwords should match."; 
     }
 }
 
@@ -165,8 +169,12 @@ if(loginSingUp === 'l' || loginSingUp === "L"){
         console.log("");
     }
 }else if(loginSingUp === 's' || loginSingUp === 'S'){
-    console.log(signUp());
-    food();
+    if(signUp()=== 'exist'){
+        console.log("already a user try different name or login.");
+    }else{
+        food();
+    }
+
 }else{
     console.log("Please enter l/L for Loging in and s/S for creating account.");
 }
