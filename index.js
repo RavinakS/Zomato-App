@@ -26,33 +26,41 @@ function signUp(){
     const userName = readline.question("userName/Phone Number:- ");
 
     const all_users_data = readJsonFile(filename);
-    all_users_data.users.forEach(element=>{
-        if(element.userName === userName){
-            console.log("hii");
-            return "exist";
+    let checker = false;
+    var count = 0;
+    for(count; count<all_users_data.users.length; count++){
+        if(all_users_data.users[count].userName === userName){
+            checker = true;
+            break;
         }
-    })
-    console.log("");
-    const password = readline.question("Password:- ");
-    console.log("");
-    const password2 = readline.question("Re-enter the password:- ");
-    console.log("");
-
-    if(password===password2){
-        const location = address();
-        const userDetails = {
-            "userName": userName,
-            "password": password2,
-            "address": location
-        }
-
-        all_users_data.users.push(userDetails);
-
-        writeJsonFile(filename, all_users_data);
-        
-        return "Account has been created."   
+    }
+    
+    if(checker){
+        return "exist";
     }else{
-        return "Both passwords should match."; 
+        console.log("");
+        const password = readline.question("Password:- ");
+        console.log("");
+        const password2 = readline.question("Re-enter the password:- ");
+        console.log("");
+
+        if(password===password2){
+            const location = address();
+            const userDetails = {
+                "userName": userName,
+                "password": password2,
+                "address": location
+            }
+
+            all_users_data.users.push(userDetails);
+
+            writeJsonFile(filename, all_users_data);
+            
+            return "Account has been created."   
+        }else{
+            return "Both passwords should match."; 
+        }
+
     }
 }
 
@@ -169,8 +177,12 @@ if(loginSingUp === 'l' || loginSingUp === "L"){
         console.log("");
     }
 }else if(loginSingUp === 's' || loginSingUp === 'S'){
-    if(signUp()=== 'exist'){
+    const exist = signUp();
+    if(exist === 'exist'){
+        console.log("");
+        console.log("                ***");
         console.log("already a user try different name or login.");
+        console.log("");
     }else{
         food();
     }
