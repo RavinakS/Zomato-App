@@ -1,6 +1,5 @@
 const readline = require('readline-sync');
 const fs = require('fs');
-const { LOADIPHLPAPI } = require('dns');
 
 function login(){
     const username = readline.question("userName/Phone Number:- ");
@@ -24,7 +23,20 @@ function foodType(data){
             }
         })
     });
-
+    
+    var count = 0;
+    for(count; count<types_of_food.length; count++){
+        if(count===4){
+            console.log("");
+            var user = readline.question("More options(y/n)");
+            if(user==='n'){
+                break;
+            }
+            console.log("");
+            
+        }
+        console.log(count+1, types_of_food[count]);
+    }
     return types_of_food;
 
 }
@@ -32,16 +44,21 @@ function foodType(data){
 function food(){
     const data = fs.readFileSync('food.json');
     const food = JSON.parse(data);
+    const awailableFood = foodType(food);
     console.log("");
-    // food.forEach(element => {
-    //     console.log(`* ${element.restaurant}`);
-    // });
-    // console.log("");
+    console.log(" **Welcome to Zomato**");
+    const user = readline.question("what would you like to eat? ");
 
-    console.log(foodType(food));
+
+    return awailableFood;
 }
 
 // console.log(login());
 // console.log(address());
+console.log("");
+console.log(`           ****            `);
+console.log("   Eat what makes you happy :)");
+console.log("");
+
 
 food();

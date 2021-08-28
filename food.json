@@ -12,11 +12,11 @@
             },
             {
                 "Sandwich": ["Normal chicken Sandwich", "Egg Sandwich", "Fish Sandwich", "Grilled cheese Sandwich", "Tuna Sandwich"],
-                "foodType": "NonVeg"
+                "foodType": "Sandwich"
             },
             {
-                "chicken": ["Chicken lolipop", "Chicken keema", "Chicken Biryani", "Chicken shawarma", "chicken manchurian"],
-                "foodType": "nonVeg"
+                "Chicken": ["Chicken lolipop", "Chicken keema", "Chicken Biryani", "Chicken shawarma", "chicken manchurian"],
+                "foodType": "Chicken"
             }
         ]
     },
@@ -33,11 +33,11 @@
             },
             {
                 "Sandwich": ["Normal chicken Sandwich", "Egg Sandwich", "Fish Sandwich", "Grilled cheese Sandwich", "Tuna Sandwich"],
-                "foodType": "NonVeg"
+                "foodType": "Sandwich"
             },
             {
-                "chicken": ["Chicken lolipop", "Chicken keema", "Chicken Biryani", "Chicken shawarma", "chicken manchurian"],
-                "foodType": "nonVeg"
+                "Chicken": ["Chicken lolipop", "Chicken keema", "Chicken Biryani", "Chicken shawarma", "chicken manchurian"],
+                "foodType": "Chicken"
             }
             
         ]
@@ -51,7 +51,7 @@
             },
             {
                 "Sandwich": ["Normal chicken Sandwich", "Egg Sandwich", "Fish Sandwich", "Grilled cheese Sandwich", "Tuna Sandwich"],
-                "foodType": "NonVeg"
+                "foodType": "Sandwich"
             },
             {
                 "Dosa": ["Masala Dosa", "Plain", "Onion", "Rava", "Cheese"],
@@ -84,7 +84,7 @@
             },
             {
                 "Ladoo": ["Beshan ladoo", "bundi ladoo", "mix dry fruits ladoo", "Naryal ladoo", "Rava ladoo"],
-                "foodType": "Sweeets"
+                "foodType": "Sweets"
             }
         ]
     },
