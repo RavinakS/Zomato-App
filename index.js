@@ -1,5 +1,6 @@
 const readline = require('readline-sync');
 const fs = require('fs');
+var total_Amount = 0
 
 function login(){
     const username = readline.question("userName/Phone Number:- ");
@@ -132,6 +133,7 @@ function findingRestaurant(data, order){
         console.log("Currently not available:(");
         console.log("Thanks for visiting:)");
         console.log("");
+        return true;
     }
 }
 
@@ -147,7 +149,6 @@ function addToCart(foodDetails, item){
     var item_Price = get_random(prices);
 
     var all_item_price = [];
-    var total_Amount = 0
 
     foodDetails.forEach(element=>{
         if(element.id === r_id){
@@ -204,11 +205,57 @@ function food(){
     console.log(" **Welcome to Zomato**");
     const user = readline.question("what would you like to eat? ");
 
-    findingRestaurant(food_data, user);
-    addToCart(food_data, user);
-
-    return awailableFood;
+    if(findingRestaurant(food_data, user)){
+        return false;
+    }else{
+        addToCart(food_data, user);
+        return awailableFood;
+    }
 }
+
+function payment(amount){
+    console.log("");
+    console.log("    ***");
+    console.log("Payment methods:");
+    console.log("");
+    console.log("UPI method: ");
+    console.log("   1. Phone pay");
+    console.log("   2. Google pay");
+    console.log("   3. Paytm");
+    console.log("");
+    console.log("4. Cash on Delivery");
+    console.log("");
+    const payment = parseInt(readline.question('How will you pay:- '));
+    if(payment===1 || payment===2 || payment===3){
+        console.log("");
+        readline.question("password:- ");
+        console.log("");
+        console.log(`Rs ${amount} is deducted from your account.`);
+        console.log("");
+        console.log("           ***");
+        console.log("  Your order is getting prepaired.");
+        setTimeout(function () {
+            console.log("");
+            console.log('Your parsel in on the way....🚴‍♀️')
+          }, 5000)
+    }else{
+        console.log("");
+        console.log("Your order is excepted.");
+        console.log("Cash on Delevery.");
+        console.log("");
+        console.log("           ***");
+        console.log("  Your order is getting prepaired.");
+        setTimeout(function () {
+            console.log("");
+            console.log('Your parsel in on the way....🚴‍♀️')
+            console.log("You'll get it soon.");
+            console.log("");
+            console.log("💛Have a nice Day💛");
+            console.log("");
+          }, 5000);
+    };
+}
+
 
 console.log("");
 const loginSingUp = readline.question("Login(L/l) or Signup(S/s) => ");
@@ -220,6 +267,18 @@ if(loginSingUp === 'l' || loginSingUp === "L"){
         console.log("");
         address()
         food();
+
+        while(true){
+            const proceed = readline.question("Do you want to add any other itmes?(y/n):- ");
+            if(proceed==="n" || proceed==="N"){
+                console.log(`Total Amount:- ${total_Amount}`);
+                payment(total_Amount);
+                break;
+            }else{
+                food();
+            }
+        }
+        
     }else if(zomatoUser === "No"){
         console.log("");
         console.log("Wrong Password!");
