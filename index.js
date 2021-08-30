@@ -44,7 +44,7 @@ function signUp(){
         console.log("");
         const password = readline.question("Password:- ");
         console.log("");
-        const password2 = readline.question("Re-enter the password:- ");
+        const password2 = readline.question("Confirm password:- ");
         console.log("");
 
         if(password===password2){
@@ -54,16 +54,14 @@ function signUp(){
                 "password": password2,
                 "address": location
             }
-
             all_users_data.users.push(userDetails);
 
             writeJsonFile(filename, all_users_data);
             
             return "Account has been created."   
         }else{
-            return "Both passwords should match."; 
+            return "no"; 
         }
-
     }
 }
 
@@ -304,12 +302,16 @@ if(loginSingUp === 'l' || loginSingUp === "L"){
         console.log("");
         console.log("                ***");
         console.log("already a user try different name or login.");
+    }else if(exist === 'no'){
         console.log("");
+        console.log("Both passwords should match.");
     }else{
+        console.log("");
+        console.log(exist);
         food();
     }
 
 }else{
     console.log("Please enter l/L for Loging in and s/S for creating account.");
 }
-
+console.log("");
