@@ -99,7 +99,7 @@ function foodType(data){
         if(count===4){
             console.log("");
             var user = readline.question("More options(y/n)");
-            if(user==='n'){
+            if(user==='n' || user === 'N'){
                 break;
             }
             console.log("");
@@ -201,7 +201,9 @@ function food(){
 
     console.log("");
     console.log(" **Welcome to Zomato**");
-    const user = readline.question("what would you like to eat? ");
+    const user_input = readline.question("what would you like to eat? ");
+    const user = user_input.toLowerCase()
+
 
     if(findingRestaurant(food_data, user)){
         return false;
@@ -236,6 +238,9 @@ function payment(amount){
             console.log("");
             console.log('Your parsel in on the way....🚴‍♀️')
           }, 5000)
+        console.log("");
+        console.log("💛Have a nice Day💛");
+        console.log("");
     }else{
         console.log("");
         console.log("Your order is excepted.");
@@ -246,6 +251,7 @@ function payment(amount){
         setTimeout(function () {
             console.log("");
             console.log('Your parsel in on the way....🚴‍♀️')
+            console.log("");
             console.log("You'll get it soon.");
             console.log("");
             console.log("💛Have a nice Day💛");

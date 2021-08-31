@@ -4,20 +4,20 @@
         "id": 1,
         "foodItems": [
             {
-                "Dosa": ["Masala Dosa", "Plain", "Onion", "Rava", "Cheese"],
-                "foodType": "Dosa"
+                "dosa": ["Masala dosa", "Plain", "Onion", "Rava", "Cheese"],
+                "foodType": "dosa"
             },
             {
-                "Idli": ["Rice and Mong dal idli", "Paneer Vegetable idli", "Mini Spinach idli", "Kanchipuram idli", "Bread Idli"],
-                "foodType": "Idli"
+                "idli": ["Rice and Mong dal idli", "Paneer Vegetable idli", "Mini Spinach idli", "Kanchipuram idli", "Bread idli"],
+                "foodType": "idli"
             },
             {
-                "Sandwich": ["Normal chicken Sandwich", "Egg Sandwich", "Fish Sandwich", "Grilled cheese Sandwich", "Tuna Sandwich"],
-                "foodType": "Sandwich"
+                "sandwich": ["Normal chicken sandwich", "Egg sandwich", "fish sandwich", "Grilled cheese sandwich", "Tuna sandwich"],
+                "foodType": "sandwich"
             },
             {
-                "Chicken": ["Chicken lolipop", "Chicken keema", "Chicken Biryani", "Chicken shawarma", "chicken manchurian"],
-                "foodType": "Chicken"
+                "chicken": ["chicken lolipop", "chicken keema", "chicken Biryani", "chicken shawarma", "chicken manchurian"],
+                "foodType": "chicken"
             }
         ]
     },
@@ -26,20 +26,24 @@
         "id": 2,
         "foodItems": [
             {
-                "Cake": ["Butter cake", "Sponge cake", "Chiffon Cake", "Red Velvet cake", "Carrot cake", "Opera cake"],
-                "foodType": "Cake"
+                "cake": ["Butter cake", "Sponge cake", "Chiffon cake", "Red Velvet cake", "Carrot cake", "Opera cake"],
+                "foodType": "cake"
             },
             {
-                "Tea": ["Green tea", "White tea", "Black tea", "Herbal tea", "tea blends", "Butter tea", "milk with Ginger tea"],
-                "foodType": "Tea"
+                "burger": ["Chicken burger", "Vaggie burger", "Black Bean burger", "Steamed Cheeseburger", "Vegan burger"],
+                "foodType": "burger"
             },
             {
-                "Sandwich": ["Normal chicken Sandwich", "Egg Sandwich", "Fish Sandwich", "Grilled cheese Sandwich", "Tuna Sandwich"],
-                "foodType": "Sandwich"
+                "tea": ["Green tea", "White tea", "Black tea", "Herbal tea", "tea blends", "Butter tea", "milk with Ginger tea"],
+                "foodType": "tea"
             },
             {
-                "Chicken": ["Chicken lolipop", "Chicken keema", "Chicken Biryani", "Chicken shawarma", "chicken manchurian"],
-                "foodType": "Chicken"
+                "sandwich": ["Normal chicken sandwich", "Egg sandwich", "fish sandwich", "Grilled cheese sandwich", "Tuna sandwich"],
+                "foodType": "sandwich"
+            },
+            {
+                "chicken": ["chicken lolipop", "chicken keema", "chicken Biryani", "chicken shawarma", "chicken manchurian"],
+                "foodType": "chicken"
             }
             
         ]
@@ -49,20 +53,20 @@
         "id": 3,
         "foodItems": [
             {
-                "Tea": ["Green tea", "White tea", "Black tea", "Herbal tea", "tea blends", "Butter tea", "milk with Ginger tea"],
-                "foodType": "Tea"
+                "tea": ["Green tea", "White tea", "Black tea", "Herbal tea", "tea blends", "Butter tea", "milk with Ginger tea"],
+                "foodType": "tea"
             },
             {
-                "Sandwich": ["Normal chicken Sandwich", "Egg Sandwich", "Fish Sandwich", "Grilled cheese Sandwich", "Tuna Sandwich"],
-                "foodType": "Sandwich"
+                "sandwich": ["Normal chicken sandwich", "Egg sandwich", "Fish sandwich", "Grilled cheese sandwich", "Tuna sandwich"],
+                "foodType": "sandwich"
             },
             {
-                "Dosa": ["Masala Dosa", "Plain", "Onion", "Rava", "Cheese"],
-                "foodType": "Dosa"
+                "dosa": ["Masala dosa", "Plain", "Onion", "Rava", "Cheese"],
+                "foodType": "dosa"
             },
             {
-                "Idli": ["Rice and Mong dal idli", "Paneer Vegetable idli", "Mini Spinach idli", "Kanchipuram idli", "Bread Idli"],
-                "foodType": "Idli"
+                "idli": ["Rice and Mong dal idli", "Paneer Vegetable idli", "Mini Spinach idli", "Kanchipuram idli", "Bread idli"],
+                "foodType": "idli"
             }
         ]
     },
@@ -71,24 +75,24 @@
         "id": 4,
         "foodItems": [
             {
-                "Tea": ["Green tea", "White tea", "Black tea", "Herbal tea", "tea blends", "Butter tea", "milk with Ginger tea"],
-                "foodType": "Tea"
+                "tea": ["Green tea", "White tea", "Black tea", "Herbal tea", "tea blends", "Butter tea", "milk with Ginger tea"],
+                "foodType": "tea"
             },
             {
-                "Sandwich": ["Normal chicken Sandwich", "Egg Sandwich", "Fish Sandwich", "Grilled cheese Sandwich", "Tuna Sandwich"],
-                "foodType": "Sandwich"
+                "sandwich": ["Normal chicken sandwich", "Egg sandwich", "Fish sandwich", "Grilled cheese sandwich", "Tuna sandwich"],
+                "foodType": "sandwich"
             },
             {
-                "Dosa": ["Masala Dosa", "Plain", "Onion", "Rava", "Cheese"],
-                "foodType": "Dosa"
+                "dosa": ["Masala dosa", "Plain", "Onion", "Rava", "Cheese"],
+                "foodType": "dosa"
             },
             {
-                "Idli": ["Rice and Mong dal idli", "Paneer Vegetable idli", "Mini Spinach idli", "Kanchipuram idli", "Bread Idli"],
-                "foodType": "Idli"
+                "idli": ["Rice and Mong dal idli", "Paneer Vegetable idli", "Mini Spinach idli", "Kanchipuram idli", "Bread idli"],
+                "foodType": "idli"
             },
             {
-                "Ladoo": ["Beshan ladoo (1/2 kg)", "bundi ladoo (1/2 kg)", "mix dry fruits ladoo (1/2 kg)", "Naryal ladoo (1/2 kg)", "Rava ladoo (1/2 kg)"],
-                "foodType": "Ladoo"
+                "ladoo": ["Beshan ladoo (1/2 kg)", "bundi ladoo (1/2 kg)", "mix dry fruits ladoo (1/2 kg)", "Naryal ladoo (1/2 kg)", "Rava ladoo (1/2 kg)"],
+                "foodType": "ladoo"
             }
         ]
     },
@@ -97,24 +101,24 @@
         "id": 5,
         "foodItems": [
             {
-                "Dosa": ["Masala Dosa", "Plain", "Onion", "Rava", "Cheese"],
-                "foodType": "Dosa"
+                "dosa": ["Masala dosa", "Plain", "Onion", "Rava", "Cheese"],
+                "foodType": "dosa"
             },
             {
-                "Idli": ["Rice and Mong dal idli", "Paneer Vegetable idli", "Mini Spinach idli", "Kanchipuram idli", "Bread Idli"],
-                "foodType": "Idli"
+                "idli": ["Rice and Mong dal idli", "Paneer Vegetable idli", "Mini Spinach idli", "Kanchipuram idli", "Bread idli"],
+                "foodType": "idli"
             },
             {
-                "Ladoo": ["Beshan ladoo (1/2 kg)", "bundi ladoo (1/2 kg)", "mix dry fruits ladoo (1/2 kg)", "Naryal ladoo (1/2 kg)", "Rava ladoo (1/2 kg)"],
-                "foodType": "Ladoo"
+                "ladoo": ["Beshan ladoo (1/2 kg)", "bundi ladoo (1/2 kg)", "mix dry fruits ladoo (1/2 kg)", "Naryal ladoo (1/2 kg)", "Rava ladoo (1/2 kg)"],
+                "foodType": "ladoo"
             },
             {
-                "Momos": ["Chicken momos", "fried veg momos", "tandoori momos", "", "Steamed momos"],
-                "foodType": "Momos"
+                "momos": ["chicken momos", "fried veg momos", "tandoori momos", "", "Steamed momos"],
+                "foodType": "momos"
             },
             {
-                "Cake": ["Butter cake", "Sponge cake", "Chiffon Cake", "Red Velvet cake", "Carrot cake", "Opera cake"],
-                "foodType": "Cake"
+                "cake": ["Butter cake", "Sponge cake", "Chiffon cake", "Red Velvet cake", "Carrot cake", "Opera cake"],
+                "foodType": "cake"
             }
         ]
     },
@@ -123,20 +127,20 @@
         "id": 6,
         "foodItems": [
             {
-                "Idli": ["Rice and Mong dal idli", "Paneer Vegetable idli", "Mini Spinach idli", "Kanchipuram idli", "Bread Idli"],
-                "foodType": "Idli"
+                "idli": ["Rice and Mong dal idli", "Paneer Vegetable idli", "Mini Spinach idli", "Kanchipuram idli", "Bread idli"],
+                "foodType": "idli"
             },
             {
-                "Ladoo": ["Beshan ladoo (1/2 kg)", "bundi ladoo (1/2 kg)", "mix dry fruits ladoo (1/2 kg)", "Naryal ladoo (1/2 kg)", "Rava ladoo (1/2 kg)"],
-                "foodType": "Ladoo"
+                "ladoo": ["Beshan ladoo (1/2 kg)", "bundi ladoo (1/2 kg)", "mix dry fruits ladoo (1/2 kg)", "Naryal ladoo (1/2 kg)", "Rava ladoo (1/2 kg)"],
+                "foodType": "ladoo"
             },
             {
-                "Momos": ["Chicken momos", "fried veg momos", "tandoori momos", "", "Steamed momos"],
-                "foodType": "Momos"
+                "momos": ["chicken momos", "fried veg momos", "tandoori momos", "", "Steamed momos"],
+                "foodType": "momos"
             },
             {
-                "Tea": ["Green tea", "White tea", "Black tea", "Herbal tea", "tea blends", "Butter tea", "milk with Ginger tea"],
-                "foodType": "Tea"
+                "tea": ["Green tea", "White tea", "Black tea", "Herbal tea", "tea blends", "Butter tea", "milk with Ginger tea"],
+                "foodType": "tea"
             }
         ]
     },
@@ -145,20 +149,20 @@
         "id": 7,
         "foodItems": [
             {
-                "Fish": ["Spicy fish curry", "Haidravadi fish curry", "Fish Biryani", "Fish fry"],
-                "foodType": "Fish"
+                "fish": ["Spicy fish curry", "Haidravadi fish curry", "fish Biryani", "fish fry"],
+                "foodType": "fish"
             },
             {
-                "Idli": ["Rice and Mong dal idli", "Paneer Vegetable idli", "Mini Spinach idli", "Kanchipuram idli", "Bread Idli"],
-                "foodType": "Idli"
+                "idli": ["Rice and Mong dal idli", "Paneer Vegetable idli", "Mini Spinach idli", "Kanchipuram idli", "Bread idli"],
+                "foodType": "idli"
             },
             {
-                "Ladoo": ["Beshan ladoo (1/2 kg)", "bundi ladoo (1/2 kg)", "mix dry fruits ladoo (1/2 kg)", "Naryal ladoo (1/2 kg)", "Rava ladoo (1/2 kg)"],
-                "foodType": "Ladoo"
+                "ladoo": ["Beshan ladoo (1/2 kg)", "bundi ladoo (1/2 kg)", "mix dry fruits ladoo (1/2 kg)", "Naryal ladoo (1/2 kg)", "Rava ladoo (1/2 kg)"],
+                "foodType": "ladoo"
             },
             {
-                "Cake": ["Butter cake", "Sponge cake", "Chiffon Cake", "Red Velvet cake", "Carrot cake", "Opera cake"],
-                "foodType": "Cake"
+                "cake": ["Butter cake", "Sponge cake", "Chiffon cake", "Red Velvet cake", "Carrot cake", "Opera cake"],
+                "foodType": "cake"
             }
         ]
     },
@@ -167,24 +171,24 @@
         "id": 8,
         "foodItems": [
             {
-                "Fish": ["Spicy fish curry", "Haidravadi fish curry", "Fish Biryani", "Fish fry"],
-                "foodType": "Fish"
+                "fish": ["Spicy fish curry", "Haidravadi fish curry", "fish Biryani", "fish fry"],
+                "foodType": "fish"
             },
             {
-                "Idli": ["Rice and Mong dal idli", "Paneer Vegetable idli", "Mini Spinach idli", "Kanchipuram idli", "Bread Idli"],
-                "foodType": "Idli"
+                "idli": ["Rice and Mong dal idli", "Paneer Vegetable idli", "Mini Spinach idli", "Kanchipuram idli", "Bread idli"],
+                "foodType": "idli"
             },
             {
-                "Ladoo": ["Beshan ladoo (1/2 kg)", "bundi ladoo (1/2 kg)", "mix dry fruits ladoo (1/2 kg)", "Naryal ladoo (1/2 kg)", "Rava ladoo (1/2 kg)"],
-                "foodType": "Ladoo"
+                "ladoo": ["Beshan ladoo (1/2 kg)", "bundi ladoo (1/2 kg)", "mix dry fruits ladoo (1/2 kg)", "Naryal ladoo (1/2 kg)", "Rava ladoo (1/2 kg)"],
+                "foodType": "ladoo"
             },
             {
-                "Momos": ["Chicken momos", "fried veg momos", "tandoori momos", "", "Steamed momos"],
-                "foodType": "Momos"
+                "momos": ["chicken momos", "fried veg momos", "tandoori momos", "Wheat momos", "Steamed momos"],
+                "foodType": "momos"
             },
             {
-                "Tea": ["Green tea", "White tea", "Black tea", "Herbal tea", "tea blends", "Butter tea", "milk with Ginger tea"],
-                "foodType": "Tea"
+                "tea": ["Green tea", "White tea", "Black tea", "Herbal tea", "tea blends", "Butter tea", "milk with Ginger tea"],
+                "foodType": "tea"
             }
         ]
     },
@@ -193,24 +197,24 @@
         "id": 9,
         "foodItems": [
             {
-                "Burger": ["Small Hamburger", "Regular Hamburger", "Hamburger", "Huge Hamburger"],
-                "foodType": "Burger"
+                "burger": ["Small burger", "Regular burger", "Hamburger", "Huge Hamburger"],
+                "foodType": "burger"
             },
             {
-                "Fish": ["Spicy fish curry", "Haidravadi fish curry", "Fish Biryani", "Fish fry"],
-                "foodType": "Fish"
+                "fish": ["Spicy fish curry", "Haidravadi fish curry", "fish Biryani", "fish fry"],
+                "foodType": "fish"
             },
             {
-                "Idli": ["Rice and Mong dal idli", "Paneer Vegetable idli", "Mini Spinach idli", "Kanchipuram idli", "Bread Idli"],
-                "foodType": "Idli"
+                "idli": ["Rice and Mong dal idli", "Paneer Vegetable idli", "Mini Spinach idli", "Kanchipuram idli", "Bread idli"],
+                "foodType": "idli"
             },
             {
-                "Ladoo": ["Beshan ladoo (1/2 kg)", "bundi ladoo (1/2 kg)", "mix dry fruits ladoo (1/2 kg)", "Naryal ladoo (1/2 kg)", "Rava ladoo (1/2 kg)"],
-                "foodType": "Ladoo"
+                "ladoo": ["Beshan ladoo (1/2 kg)", "bundi ladoo (1/2 kg)", "mix dry fruits ladoo (1/2 kg)", "Naryal ladoo (1/2 kg)", "Rava ladoo (1/2 kg)"],
+                "foodType": "ladoo"
             },
             {
-                "Cake": ["Butter cake", "Sponge cake", "Chiffon Cake", "Red Velvet cake", "Carrot cake", "Opera cake"],
-                "foodType": "Cake"
+                "cake": ["Butter cake", "Sponge cake", "Chiffon cake", "Red Velvet cake", "Carrot cake", "Opera cake"],
+                "foodType": "cake"
             }
        ]
     }
