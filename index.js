@@ -2,27 +2,6 @@ const readline = require('readline-sync');
 const fs = require('fs');
 var total_Amount = 0
 
-function login(){
-    const username = readline.question("userName/Phone Number:- ");
-    const password = readline.question("password:- ");
-
-    const filename = 'usersDetails.json'
-    const all_users_data = readJsonFile(filename);
-    var index = 0;
-    for(index; index<=all_users_data.users.length; index++){
-        if(all_users_data.users[index].userName === username){
-            if(all_users_data.users[index].password === password){
-                return "yes";
-            }else{
-                return 'No'
-            }
-        }
-    }
-    if(index===all_users_data.users.length){
-        return 'no'
-    }
-}
-
 function signUp(){
     const filename = 'usersDetails.json';
     console.log("");
@@ -237,10 +216,10 @@ function payment(amount){
         setTimeout(function () {
             console.log("");
             console.log('Your parsel in on the way....🚴‍♀️')
+            console.log("");
+            console.log("💛Have a nice Day💛");
+            console.log("");
           }, 5000)
-        console.log("");
-        console.log("💛Have a nice Day💛");
-        console.log("");
     }else{
         console.log("");
         console.log("Your order is excepted.");
@@ -254,12 +233,34 @@ function payment(amount){
             console.log("");
             console.log("You'll get it soon.");
             console.log("");
-            console.log("💛Have a nice Day💛");
+            console.log("💛 Have a nice Day💛");
             console.log("");
           }, 5000);
     };
 }
 
+function login(){
+    console.log("");
+    const username = readline.question("userName/Phone Number:- ");
+    const password = readline.question("password:- ");
+
+    const filename = 'usersDetails.json'
+    const all_users_data = readJsonFile(filename);
+    
+    var index = 0;
+    for(index; index<all_users_data.users.length; index++){
+        if(all_users_data.users[index]["userName"] === username){
+            if(all_users_data.users[index].password === password){
+                return "yes";
+            }else{
+                return 'No'
+            }
+        }
+    }
+    if(index===all_users_data.users.length){
+        return 'no'
+    }
+}
 
 console.log("");
 const loginSingUp = readline.question("Login(L/l) or Signup(S/s) => ");
@@ -288,6 +289,7 @@ if(loginSingUp === 'l' || loginSingUp === "L"){
         console.log("Wrong Password!");
         console.log("");
     }else if(zomatoUser === "no"){
+        console.log("");
         console.log("UserName not exist. try signing Up(s).");
         console.log("");
     }else{

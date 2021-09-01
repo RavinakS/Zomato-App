@@ -19,6 +19,21 @@
       "userName": "bharti",
       "password": "12",
       "address": "mohamari"
+    },
+    {
+      "userName": "jyoti",
+      "password": "12",
+      "address": "NAVGURUKUL"
+    },
+    {
+      "userName": "sarmis",
+      "password": "12",
+      "address": "navguruku;"
+    },
+    {
+      "userName": "shweta",
+      "password": "12",
+      "address": "navgurukul"
     }
   ]
 }
