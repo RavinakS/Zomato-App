@@ -9,3 +9,10 @@ This is one of my hackathon projects, I had to make back-end(basic) of Zomato ap
 5. Show total amount 
 6. Payment methods
 
+### **How to Run**
+node index.js
+
+## JSON - JavaScript Object Notation
+JSON is a standered text-based format for representing structured data in JavaScript Object Syntax(Key-Value pair)
+Sending data from client to server and server to client in JavaScript Object format.
+JSON exists as a string.
